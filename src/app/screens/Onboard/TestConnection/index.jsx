@@ -91,7 +91,7 @@ export default function TestConnection() {
         setAccountInfo({ alias, balance });
       })
       .catch((e) => {
-        console.log(e);
+        console.error(e);
         setErrorMessage(e.message);
       })
       .finally(() => setLoading(false));
@@ -207,7 +207,7 @@ export default function TestConnection() {
                   </p>
 
                   <div className="mt-8">
-                    <a href="https://area402.herokuapp.com/demo">
+                    <a href="https://getalby.com/demo">
                       <Button label="Give it a try now" primary />
                     </a>
                   </div>

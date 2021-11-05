@@ -6,7 +6,7 @@ import QRCode from "react-qr-code";
 
 import utils from "../../../../common/lib/utils";
 
-const url = process.env.ALBY_LNDHUB_URL || "https://lndhub.herokuapp.com";
+const url = process.env.ALBY_LNDHUB_URL || "https://lndhub.getalby.com";
 
 export default function NewWallet() {
   const [lndHubData, setLndHubData] = useState({
@@ -75,7 +75,7 @@ export default function NewWallet() {
           history.push("/test-connection");
         }
       } else {
-        console.log(validation);
+        console.log({ validation });
         alert(`Connection failed (${validation.error})`);
       }
     } catch (e) {
