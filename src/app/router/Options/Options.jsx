@@ -14,6 +14,7 @@ import Send from "../../screens/Send";
 import Receive from "../../screens/Receive";
 import Settings from "../../screens/Settings";
 import Unlock from "../../screens/Unlock";
+import Feedback from "../../screens/Feedback";
 
 function Options() {
   return (
@@ -36,6 +37,7 @@ function Options() {
             <Route path="send" element={<Send />} />
             <Route path="receive" element={<Receive />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="feedback" element={<Feedback />} />
             <Route
               path="accounts/new/*"
               element={
@@ -91,6 +93,7 @@ const Layout = () => {
         <Navbar.Link href="/send">Send</Navbar.Link>
         <Navbar.Link href="/receive">Receive</Navbar.Link>
         <Navbar.Link href="/settings">Settings</Navbar.Link>
+        <Navbar.Link href="/feedback">Feedback</Navbar.Link>
       </Navbar>
 
       <Outlet />
